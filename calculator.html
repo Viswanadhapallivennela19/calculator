@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section class="calculator">
+        <div class="parent-grid">
+            <input class="child1" id="result"    disabled></input>
+            <div class="child child20" onclick="clearResult()">C</div>
+            <div class="child child2" onclick="deleteLast()">DEL</div>
+            <div class="child child3" onclick="appendValue('+')">+</div>
+            <div class="child child4" onclick="appendValue('%')">&divide;</div>
+            <div class="child child5" onclick="appendValue('7')">7</div>
+            <div class="child child6" onclick="appendValue('8')">8</div>
+            <div class="child child7" onclick="appendValue('9')">9</div>
+            <div class="child child8" onclick="appendValue('/')">/</div>
+            <div class="child child9" onclick="appendValue('4')">4</div>
+            <div class="child child10" onclick="appendValue('5')">5</div>
+            <div class="child child11" onclick="appendValue('6')">6</div>
+            <div class="child child12" onclick="appendValue('*')">*</div>
+            <div class="child child13" onclick="appendValue('1')">1</div>
+            <div class="child child14" onclick="appendValue('2')">2</div>
+            <div class="child child15" onclick="appendValue('3')">3</div>
+            <div class="child child16" onclick="appendValue('-')">-</div>
+            <!-- <div class="child child18" onclick="appendValue('00')">00</div> -->
+            <div class="child child18" onclick="appendValue('0')">0</div>
+            <div class="child child17" onclick="appendValue('.')">.</div>
+            <div class="child child14" onclick="appendValue('**2')">x<sup>2</sup></div>
+            <div class="child child15" onclick="appendValue('**3')">x<sup>3</sup></div>
+            <div class="child child17" onclick="appendValue('**')">x<sup>y</sup></div>
+            <div class="child child18" onclick="appendValue('**0.5')">&radic;x</div>
+            <div class="child child16" onclick="appendValue('**0.3333333333')"><sup>3</sup>&radic;x</div>
+            <div class="child child16" onclick="appendValue('*3.141592')">&pi;</div>
+            <div class="child child16" onclick="appendValue('2.71828182845904523536**')">e<sup>x</sup></div>
+            <div class="child child17" onclick="fact()">x!</div>
+            <div class="child child19" onclick="calculate()">=</div>
+            <audio id="clickSound" src="sound-effect.mp3"></audio>
+        </div>
+    </section>
+
+
+
+    
+<script src="calculator.js"></script>
+</body>
+</html>
